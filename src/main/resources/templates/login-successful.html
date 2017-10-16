@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Login successful</title>
+</head>
+<body>
+<h2>Login was successful!</h2>
+<h2>Your login is: <b th:text ="${user.username}"/></h2>
+<h2>Your password is: <b th:text ="${user.password}"/></h2>
+<a href="office" th:ation="@{/office}" th:object="${user}" method="get">Go to office</a>
+</body>
+</html>
